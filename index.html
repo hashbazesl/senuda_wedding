@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rashan-Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Celebrating Rashan's with HashBaze" />
+    <meta name="keywords" content="wedding,couple,ceremony,rsvp,event" />
+    <meta name="author" content="HashBaze" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- CSS Files
+    ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.countdown.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/animsition.min.css" type="text/css" />
+    <link rel="stylesheet" href="rsvp/form.css" />
+
+    <!-- custom background -->
+    <link rel="stylesheet" href="css/bg.css" type="text/css" />
+
+    <!-- color scheme -->
+    <link rel="stylesheet" href="css/color.css" type="text/css" id="colors" />
+
+    <!-- RSVP email service -->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("dkz3TlzwQo7XWzQhz");
+      })();
+    </script>
+  </head>
+
+  <body id="homepage">
+    <div id="wrapper">
+      <!-- header begin -->
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- logo begin -->
+              <div id="logo">
+                <a href="index.html">
+                  <h2 style="color: #cd5d67; font-weight: 700">
+                    S<span>&amp;</span>T
+                  </h2>
+                </a>
+              </div>
+              <!-- logo close -->
+
+              <!-- small button begin -->
+              <span id="menu-btn"></span>
+              <!-- small button close -->
+
+              <span class="btn-rsvp">RSVP</span>
+
+              <!-- mainmenu begin -->
+              <nav>
+                <ul id="mainmenu">
+                  <li><a href="01_story.html">Story</a></li>
+                  <!-- <li><a href="01_gallery.html">Gallery</a></li> -->
+                </ul>
+              </nav>
+            </div>
+            <!-- mainmenu close -->
+          </div>
+        </div>
+      </header>
+      <!-- header close -->
+
+      <!-- content begin -->
+      <div id="content" class="no-bottom no-top">
+        <!-- rsvp popup begin -->
+        <div id="popup-box" class="full-height">
+          <span class="btn-close">
+            <i class="icon_close"></i>
+          </span>
+
+          <div class="container center-y">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="deco id-color"><span>We Invite You</span></h2>
+                <h2 data-wow-delay=".2s">Sunday, 15 October 2023</h2>
+              </div>
+
+              <div class="spacer-double"></div>
+              <!-- col-md-5 col-md-offset-1  -->
+              <div class="text-center center-box">
+                <h3>Wedding Ceremony</h3>
+                Sunday, 15 October 2023<br />
+                6:00 PM - 11:00 PM<br />
+                Paradise Inn, Bolgoda<br />
+              </div>
+
+              <div class="spacer-double"></div>
+
+              <div id="rsvp_form" class="form-underline">
+                <div class="col-md-3">
+                  <input
+                    type="text"
+                    name="Name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <input
+                    type="text"
+                    name="Email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                    maxlength="50"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <select id="guest" name="Guest" size="1" class="form-control">
+                    <option value="" disabled selected>Guests</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <select
+                    id="attend"
+                    name="Attend"
+                    size="1"
+                    class="form-control"
+                  >
+                    <option value="" disabled selected>
+                      Are you attending?
+                    </option>
+                    <option>yes</option>
+                    <option>no</option>
+                  </select>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="spacer-single"></div>
+                  <button class="btn btn-custom" onclick="sendMail()">
+                    Submit
+                  </button>
+                </div>
+              </div>
+
+              <div class="spacer-single"></div>
+            </div>
+          </div>
+        </div>
+        <!-- rsvp popup close -->
+
+        <!-- section begin -->
+        <section
+          id="section-hero"
+          class="full-height relative z1 owl-slide-wrapper no-top no-bottom text-light"
+          data-stellar-background-ratio=".2"
+        >
+          <div class="owl-slider-nav">
+            <div class="next"></div>
+            <div class="prev"></div>
+          </div>
+
+          <div class="center-y fadeScroll relative" data-scroll-speed="4">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <div class="row">
+                    <div class="spacer-single"></div>
+                    <div class="col-md-5 text-right text-center-sm relative">
+                      <h2 class="name">Senuda</h2>
+                    </div>
+                    <div class="col-md-2 text-center">
+                      <span class="deco-big" data-scroll-speed="2">&amp;</span>
+                    </div>
+                    <div class="col-md-5 text-left text-center-sm relative">
+                      <h2 class="name">Tharushi</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="custom-owl-slider" class="owl-slide" data-scroll-speed="2">
+            <div class="item">
+              <img src="images/slider/senuda-8.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/slider/senuda-2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="images/slider/senuda-5.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section id="section-couple" class="no-top">
+          <div class="container relative mt-60 z-index">
+            <div class="row">
+              <div class="col-md-5 col-md-offset-1 text-center">
+                <img
+                  src="images/misc/1.jpg"
+                  alt=""
+                  class="img-responsive img-rounded wow fadeInLeft"
+                  data-wow-delay=".2s"
+                />
+                <div class="padding40">
+                  <h2>Hansi</h2>
+                  <p>
+                    Singer, writter, chef. Love music, reading and cooking.
+                    "Love isn't something you find. Love is something that finds
+                    you."
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-5 text-center">
+                <img
+                  src="images/misc/2.jpg"
+                  alt=""
+                  class="img-responsive img-rounded wow fadeInRight"
+                  data-wow-delay=".2s"
+                />
+                <div class="padding40">
+                  <h2>Rashan</h2>
+                  <p>
+                    Hipster, designer, ilustrator. Love music and adventure.
+                    "There is only one happiness in this life, to love and be
+                    loved."
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-md-offset-5 text-center absolute">
+                <span class="circle wow zoomIn" data-wow-delay=".8s">
+                  <!-- <i class="fa fa-heart"></i> -->
+                  <img src="./images/love.gif" width="90" />
+                </span>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section aria-label="section" class="no-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="deco id-color"><span>You Are Invited</span></h2>
+                <h2 data-wow-delay=".2s">Sunday, 15 October 2023</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="section-countdown"
+          aria-label="section-countdown"
+          class="text-light"
+          data-stellar-background-ratio=".2"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="deco id-color">
+                  <span>Time Left Until Event</span>
+                </h2>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                <div class="spacer-double"></div>
+                <div id="defaultCountdown" class="wow fadeIn"></div>
+                <div class="spacer-single"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section begin -->
+        <section id="section-event">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <img
+                  src="images/misc/3.jpg"
+                  alt=""
+                  class="img-responsive img-rounded wow fadeInLeft"
+                />
+              </div>
+
+              <div
+                class="col-md-5 col-md-offset-1 pt40 pb40 wow fadeIn"
+                data-wow-delay=".5s"
+              >
+                <h3>Wedding Ceremony</h3>
+                Sunday, 15 October 2023<br />
+                6:00 PM - 11:00 PM<br />
+                Paradise Inn, Bolgoda<br />
+                <a
+                  href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63391.93012539361!2d79.90179085253787!3d6.770384115880282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2457ad82eca25%3A0x904aaafa62ba3bc8!2sParadise%20Inn!5e0!3m2!1sen!2slk!4v1696181978770!5m2!1sen!2slk"
+                  class="btn btn-custom mt30 popup-gmaps"
+                  >View on map</a
+                >
+              </div>
+            </div>
+
+            <!-- <div class="spacer-double"></div> -->
+          </div>
+        </section>
+        <!-- section close -->
+
+        <!-- section begin -->
+        <section
+          id="section-guestbook"
+          class="text-light"
+          data-stellar-background-ratio=".2"
+        >
+          <div class="container relative">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2>Wishes</h2>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div
+                id="testimonial-carousel"
+                class="de_carousel"
+                data-wow-delay=".3s"
+              >
+                <div class="col-md-6 item">
+                  <div class="de_testi opt-2">
+                    <blockquote>
+                      <p>
+                        To a special couple who show that love can be true and
+                        forever. May your lives continue to grow in love and
+                        happiness together!
+                      </p>
+                      <div class="de_testi_by">John, Friend</div>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="col-md-6 item">
+                  <div class="de_testi opt-2">
+                    <blockquote>
+                      <p>
+                        Wedding wishes for my dear friends. I hope your life
+                        together will be filled with joy, happiness and lots of
+                        love!
+                      </p>
+                      <div class="de_testi_by">Sarah, Friend</div>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="col-md-6 item">
+                  <div class="de_testi opt-2">
+                    <blockquote>
+                      <p>
+                        Hope you will have a long and happy life together.
+                        Always treat each other better than you want to be
+                        treated.
+                      </p>
+                      <div class="de_testi_by">Michael, Friend</div>
+                    </blockquote>
+                  </div>
+                </div>
+
+                <div class="col-md-6 item">
+                  <div class="de_testi opt-2">
+                    <blockquote>
+                      <p>
+                        I wish you a wonderful life together as you head down
+                        the road to married happiness. So happy for you!
+                      </p>
+                      <div class="de_testi_by">Jenny, Friend</div>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section close -->
+
+        <section id="section-gallery">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2>Couple Snaps</h2>
+                <div class="spacer-single"></div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="de_tab tab_style_3 text-center">
+                  <div class="de_tab_content">
+                    <div id="tab1" class="tab_single_content">
+                      <div class="row">
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-1.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-1.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-2.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-2.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-3.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-3.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-4.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-4.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-5.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-5.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-1/snaps/senuda-6.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-1/snaps/senuda-6.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+
+                    <div id="tab2" class="tab_single_content">
+                      <div class="row">
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/1.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/1.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/2.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/2.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/3.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/3.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/4.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/4.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/5.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/5.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="col-md-4 text-center mb10">
+                          <figure class="picframe img-rounded mb20">
+                            <a
+                              class="image-popup"
+                              href="images/gallery/category-3/6.jpg"
+                            >
+                              <span class="overlay-v">
+                                <i></i>
+                              </span>
+                            </a>
+                            <img
+                              src="images/gallery/category-3/6.jpg"
+                              class="img-responsive img-rounded"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+
+                        <div class="clearfix"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- content close -->
+
+      <!-- footer begin -->
+      <footer>
+        <div class="container text-center text-light">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="hs1 wow fadeInUp">Laurie<span>&amp;</span>Briant</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="subfooter">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-12">By HashBaze</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer close -->
+
+      <a href="#" id="back-to-top"></a>
+      <div id="preloader">
+        <div class="preloader1"></div>
+      </div>
+    </div>
+
+    <audio loop="loop" autoplay="autoplay">
+      <!-- <source src="music/Feels Like a Wedding Day.mp3" type="audio/mpeg" /> -->
+    </audio>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.isotope.min.js"></script>
+    <!-- <script src="js/easing.js"></script> -->
+    <script src="js/owl.carousel.js"></script>
+    <!-- <script src="js/jquery.countTo.js"></script> -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <!-- <script src="js/jquery.stellar.min.js"></script> -->
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/countdown-custom.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="rsvp/email.js"></script>
+  </body>
+</html>
