@@ -1219,9 +1219,9 @@
 			sequence();
 			sequence_a();
 			/* plugin | stellar */
-			$.stellar({
-				verticalOffset: 0
-			});
+			// $.stellar({
+			// 	verticalOffset: 0
+			// });
 		});
 		/* --------------------------------------------------
 		 * window | on resize

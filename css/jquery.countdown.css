@@ -40,6 +40,9 @@
 	float: left;
 	font-size: 16px;
 	text-align: center;
+	background-color: #f2a50a;
+	/* border-radius: 10px; */
+	/* margin: 1px */
 }
 .countdown-amount {
 	font-weight:300;
@@ -48,7 +51,8 @@
 }
 .text-light .countdown-amount,
 .text-light .countdown-period{
-	color:#fff;
+	color:#000000;
+	
 }
 .countdown-period {
 	font-family:"Lato";

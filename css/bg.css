@@ -27,13 +27,13 @@ background-size: 100% !important;
 .page-people #subheader{background-image:url(../images/background/subheader-4.jpg);}
 .page-gallery #subheader{background-image:url(../images/background/subheader-5.jpg);}
 .page-journal #subheader{background-image:url(../images/background/subheader-6.jpg);}
-#subheader.subheader_02{background-image:url(../images_02/background/subheader.jpg);}
+/* #subheader.subheader_02{background-image:url(../images_02/background/subheader.jpg);} */
 
 
 /* background settings for section */
 #section-hero-1 {background:url(../images/background/6.jpg);}
-#section-hero-2 {background:url(../images_02/background/3.jpg);}
-#section-hero-3 {background:url(../images_02/background/4.jpg);}
+/* #section-hero-2 {background:url(../images_02/background/3.jpg);}
+#section-hero-3 {background:url(../images_02/background/4.jpg);} */
 #section-quote {background:url(../images/background/4.jpg);}
 #section-countdown {background:url(../images/background/countdown.jpg);}
 #section-guestbook {background:url(../images/background/5.jpg);}
@@ -43,10 +43,10 @@ background-size: 100% !important;
 
 /* 02 */
 
-#section-package {background:url(../images_02/background/1.jpg);}
+/* #section-package {background:url(../images_02/background/1.jpg);}
 #section-pricing {background:url(../images_02/background/2.jpg);}
 #explore-1.side-bg .background-image {background:url(../images_02/background/bg-side-1.jpg) top;}
-#explore-2.side-bg .background-image {background:url(../images_02/background/bg-side-2.jpg) top;}
+#explore-2.side-bg .background-image {background:url(../images_02/background/bg-side-2.jpg) top;} */
 
 /* media query */
 @media only screen and (min-device-width: 768) and (max-device-width: 1024) and (orientation: portrait){
