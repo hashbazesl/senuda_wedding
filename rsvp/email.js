@@ -6,8 +6,8 @@ function sendMail() {
     attending_status: document.getElementById("attend").value,
   };
 
-  const serviceID = "service_cm6ekxd";
-  const templateID = "template_6p56rgt";
+  const serviceID = "service_quujekv";
+  const templateID = "template_tc524bp";
 
   emailjs
     .send(serviceID, templateID, params)
